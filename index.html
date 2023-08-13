@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>zaker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href=" CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+<body class="bg-light">
+
+<!-- start nav bar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black  bg-mine text-bg-light fixed-top mb-5 ">
+        <div class="container logo">
+          <a class="navbar-brand  brand fs-2" href="#"><img width="48" height="48" src="https://img.icons8.com/plasticine/100/saving-book.png" alt="saving-book"/> zaker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  px-5   ">
+            
+              <li class="nav-item fs-5 px-1 ">
+                <a class="nav-link bg-black text-bg-dark" href="#">Home</a>
+              </li>
+              <li class="nav-item fs-5 px-1 ">
+             <a class="nav-link bg-black text-bg-dark" href="#bodytask">task</a>
+              </li>
+             
+              <form class="d-flex">
+              <!-- <input id="searchinput" onChange="searchtask()" class="form-control me-2"  type="search" placeholder="Search" aria-label="Search">
+              <!--<button  onclick="searchtask()" class="btn btn-outline-success"  type="submit">Search</button>-->  
+              </form>
+          </div>
+        </div>
+      </nav>
+<!-- end nav bar  -->
+
+
+<!-- task list -->
+<div class="container min-vh-100 ">
+  <div class="contant p-5"><h1 class="text-center m-5  ggg"> task list</h1>
+    <!--  start form-->
+    <div> 
+<div class="mb-5">
+        <label for="productnameInput" class="form-label">NAME :</label>
+        <input type="text" class="form-control" id="taskuser" placeholder="name of user">
+      </div>
+      <div class="mb-5 ">
+        <label for="productpriceInput" class="form-label">TASK :</label>
+        <input type="text" class="form-control" id="taskname" placeholder="type of task">
+      </div>
+      <div class="mb-5">
+        <label for="productcategryInput" class="form-label"> TIME :</label>
+        <input type="time" class="form-control" id="tasktime" placeholder="The start time of the task in the schedule">
+      </div>
+      <button onclick="addtaskk()" class="btn btn-primary" type="submit">ADD task</button>
+    </div>
+  </div>
+ 
+<!-- end form-->
+</div>
+<!-- end task list -->
+
+<!-- start show task--><div class="container px-4">
+
+
+  <div class="row  m-auto gx-5 p-5 container" id="bodytask"> 
+  </div>
+</div>
+
+<!-- end show task-->
+
+<!-- footer -->
+<div class="footer bg-dark text-center p-3 mt-5">
+  <p class="text-white bg-dark">© Copyright ZAKER. All Rights Reserved</p>
+  <p class="text-white bg-dark" >Designed by AHMED EID</p>
+  
+<a  href="https://github.com/ahmedgamaleid">  <img width="48" height="48" src="https://img.icons8.com/color/48/hub.png" alt="hub"/> </a>
+<p class=" text-white bg-dark">my git hub</p>
+  </div>
+<!--js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+ <script src="js/task.js"></script>
+</body>
+</html>
+
+
